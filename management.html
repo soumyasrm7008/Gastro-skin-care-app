@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#174d3c"><title>Clinic Workspace | Gastro Skin Care</title><link rel="stylesheet" href="management.css">
+</head>
+<body>
+<div class="shell">
+<aside class="sidebar" id="sidebar">
+  <a class="brand" href="index.html"><span class="brand-mark">G+</span><span><b>GASTRO SKIN</b><small>CARE WORKSPACE</small></span></a>
+  <div class="nav-label">WORKSPACE</div>
+  <nav id="sideNav">
+    <button class="nav-item active" data-page="dashboard">▦ <span>Dashboard</span></button>
+    <button class="nav-item" data-page="appointments">▣ <span>Appointments</span></button>
+    <button class="nav-item" data-page="patients">♙ <span>Patients</span></button>
+    <button class="nav-item" data-page="services">✚ <span>Services</span></button>
+    <button class="nav-item" data-page="inventory">▤ <span>Medicine inventory</span></button>
+    <button class="nav-item" data-page="suppliers">⇄ <span>Suppliers & purchases</span></button>
+    <button class="nav-item" data-page="billing">₹ <span>Billing / POS</span></button>
+    <button class="nav-item" data-page="sales">▧ <span>Invoices & returns</span></button>
+    <button class="nav-item" data-page="ledger">◷ <span>Income & expenses</span></button>
+    <button class="nav-item" data-page="reports">▥ <span>Reports & expiry</span></button>
+    <button class="nav-item" data-page="messages">✉ <span>Messages</span></button>
+    <button class="nav-item" data-page="portal">♧ <span>Patient portal</span></button>
+    <button class="nav-item" data-page="users">♟ <span>Team & roles</span></button>
+    <button class="nav-item" data-page="settings">⚙ <span>Settings</span></button>
+  </nav>
+  <div class="sidebar-foot"><span class="status-dot"></span> Local prototype workspace<br><small>Connect a secure backend before real use.</small></div>
+</aside>
+<main class="main">
+  <header class="topbar"><button id="mobileMenu" class="mobile-menu" aria-label="Toggle menu">☰</button><div><div class="crumb">GASTRO SKIN CARE / <span id="crumbTitle">DASHBOARD</span></div><h1 id="pageTitle">Clinic dashboard</h1></div><a class="site-link" href="index.html">View clinic website ↗</a></header>
+  <div class="notice"><b>Prototype mode:</b> this workspace saves demo entries on this device only. It is not a secure multi-user medical records system. Do not enter real patient clinical details until authentication, server storage, backups and access controls are configured.</div>
+  <section id="pageContent" class="content"></section>
+  <footer>Gastro Skin Care · Bhubaneswar, Odisha · 8260180108 · gastroskincare@gmail.com</footer>
+</main>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="management.js"></script>
+</body></html>

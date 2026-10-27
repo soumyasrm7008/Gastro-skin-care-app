@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#174d3c" />
+  <meta name="description" content="Gastro Skin Care — digestive health and skin care clinic information, contact details and appointment enquiries." />
+  <title>Gastro Skin Care | Your Wellbeing, Our Priority</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Gastro Skin Care home">
+      <img src="assets/logo.svg" alt="" class="brand-logo" />
+      <span><strong>GASTRO SKIN</strong><small>CARE</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav id="mainNav" class="nav">
+      <a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a><a href="management.html">Clinic workspace</a>
+      <a class="nav-cta" href="#appointment">Appointment enquiry</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="dot"></span> CARE THAT CONNECTS</span>
+        <h1>Better gut health.<br /><em>Healthier skin.</em></h1>
+        <p>Digestive health and skin care, brought together with a focus on your wellbeing.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#appointment">Enquire for an appointment <span>↗</span></a>
+          <a class="button secondary" href="#services">Explore services</a>
+        </div>
+        <div class="hero-note"><span class="check">✓</span> Your wellbeing, our priority.</div>
+      </div>
+      <div class="hero-art" aria-label="Abstract healthcare illustration">
+        <div class="art-ring ring-one"></div><div class="art-ring ring-two"></div>
+        <div class="art-card"><span class="art-symbol">✳</span><span class="art-card-label">WHOLE-PERSON<br/>WELLNESS</span></div>
+        <div class="floating-pill pill-a">Digestive health</div><div class="floating-pill pill-b">Skin care</div>
+        <div class="art-leaf leaf-one">❧</div><div class="art-leaf leaf-two">❧</div>
+      </div>
+    </section>
+
+    <section class="trust-strip"><div><strong>01</strong><span>Digestive health<br/>information</span></div><div><strong>02</strong><span>Skin care<br/>information</span></div><div><strong>03</strong><span>Simple appointment<br/>enquiries</span></div></section>
+
+    <section class="section" id="services">
+      <div class="section-heading"><span class="eyebrow">HOW WE CAN HELP</span><h2>Care for your<br/><em>everyday wellbeing.</em></h2><p>Explore the areas of care we bring together. A clinician can advise on the right assessment for your needs.</p></div>
+      <div class="service-grid">
+        <article class="service-card"><div class="service-icon">⌁</div><span class="service-number">01 / GUT HEALTH</span><h3>Digestive health</h3><p>Information and care enquiries for digestive concerns, stomach discomfort, acidity, bloating and bowel health.</p><a href="#appointment" class="text-link" data-topic="Digestive health">Enquire about digestive care <span>→</span></a></article>
+        <article class="service-card"><div class="service-icon skin-icon">✳</div><span class="service-number">02 / SKIN HEALTH</span><h3>Skin care</h3><p>Enquire about assessment for common skin concerns, irritation, acne, rashes and other skin conditions.</p><a href="#appointment" class="text-link" data-topic="Skin care">Enquire about skin care <span>→</span></a></article>
+        <article class="service-card service-card-dark"><div class="service-icon">♡</div><span class="service-number">03 / YOUR WELLBEING</span><h3>Personalised guidance</h3><p>Get in touch to ask about clinic services and the next steps for arranging a consultation.</p><a href="#appointment" class="text-link" data-topic="General consultation enquiry">Contact the clinic <span>→</span></a></article>
+      </div>
+      <p class="small-note">Services and availability should be confirmed directly with the clinic. This app does not provide diagnosis or emergency care.</p>
+    </section>
+
+    <section class="about-section" id="about"><div class="about-mark"><img src="assets/logo.svg" alt="Gastro Skin Care logo" /></div><div class="about-copy"><span class="eyebrow">ABOUT THE CLINIC</span><h2>One place to begin<br/><em>your care journey.</em></h2><p>GASTRO SKIN CARE brings digestive health and skin care into one clinic experience. Contact us to learn about available services and enquire about an appointment.</p><div class="about-points"><span>✓ Clear communication</span><span>✓ Patient-focused approach</span><span>✓ Convenient contact options</span></div></div></section>
+
+    <section class="appointment-section" id="appointment"><div class="appointment-copy"><span class="eyebrow light-eyebrow">LET'S CONNECT</span><h2>Take the first step<br/>towards <em>better care.</em></h2><p>Send an appointment enquiry through WhatsApp. The clinic can confirm availability and next steps.</p><a id="whatsappMain" class="button button-light" href="https://wa.me/918260180108?text=Hello%20Gastro%20Skin%20Care%2C%20I%20would%20like%20to%20enquire%20about%20an%20appointment." target="_blank" rel="noopener">Enquire on WhatsApp <span>↗</span></a></div>
+      <form id="enquiryForm" class="enquiry-form"><h3>Appointment enquiry</h3><label for="patientName">Your name</label><input id="patientName" name="name" autocomplete="name" placeholder="Enter your name" required maxlength="80"/><label for="patientPhone">Your phone number (optional)</label><input id="patientPhone" name="phone" type="tel" autocomplete="tel" placeholder="Enter phone number" maxlength="20"/><label for="topic">Area of enquiry</label><select id="topic" name="topic"><option>General consultation enquiry</option><option>Digestive health</option><option>Skin care</option><option>Clinic services</option></select><label for="message">Message (optional)</label><textarea id="message" name="message" rows="3" placeholder="How can we help? Please avoid sharing sensitive medical records here." maxlength="500"></textarea><button class="button primary form-submit" type="submit">Continue to WhatsApp <span>↗</span></button><p class="form-note">Your message opens in WhatsApp for you to review before sending. No form data is stored by this app.</p></form>
+    </section>
+
+    <section class="contact-section section" id="contact"><div class="section-heading"><span class="eyebrow">GET IN TOUCH</span><h2>We're here to<br/><em>help you connect.</em></h2></div><div class="contact-grid"><a class="contact-item" href="tel:+918260180108"><span class="contact-icon">☎</span><span><small>CALL THE CLINIC</small><strong>8260180108</strong></span><span class="contact-arrow">↗</span></a><a class="contact-item" href="mailto:gastroskincare@gmail.com"><span class="contact-icon">✉</span><span><small>EMAIL US</small><strong>gastroskincare@gmail.com</strong></span><span class="contact-arrow">↗</span></a><a class="contact-item" href="https://www.google.com/maps/search/?api=1&query=Gastro%20Skin%20Care%2C%20Bhubaneswar%2C%20Odisha" target="_blank" rel="noopener"><span class="contact-icon">⌖</span><span><small>FIND US</small><strong>Bhubaneswar, Odisha</strong></span><span class="contact-arrow">↗</span></a><a class="contact-item" href="https://gastroskincare.netlify.app" target="_blank" rel="noopener"><span class="contact-icon">◎</span><span><small>VISIT OUR WEBSITE</small><strong>gastroskincare.netlify.app</strong></span><span class="contact-arrow">↗</span></a></div></section>
+  </main>
+  <footer class="footer"><a class="brand footer-brand" href="#home"><img src="assets/logo.svg" alt="" class="brand-logo"/><span><strong>GASTRO SKIN</strong><small>CARE</small></span></a><p>Your wellbeing, our priority.</p><p class="disclaimer">Information only; not a substitute for professional medical advice. For emergencies, contact local emergency services.</p><span class="copyright">© <span id="year"></span> Gastro Skin Care</span></footer>
+  <div class="bottom-bar"><a href="tel:+918260180108">☎ Call</a><a href="https://wa.me/918260180108?text=Hello%20Gastro%20Skin%20Care" target="_blank" rel="noopener">WhatsApp ↗</a></div>
+  <script src="app.js"></script>
+</body>
+</html>
